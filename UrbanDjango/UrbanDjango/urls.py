@@ -19,13 +19,20 @@ from django.urls import path
 # from task2.views import class_func, func_temp
 # from task3.views import main_page, games_list, show_cart
 from task4.views import main_page, games_list, show_cart
+from task5.views import sign_up_by_html, sign_up_by_django
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('class_view/', class_func),
     # path('function_view/', func_temp.as_view()),
-    path('platform/', main_page),
-    path('platform/games/', games_list),
-    path('platform/cart/', show_cart),
+    # path('platform/', main_page),
+    # path('platform/games/', games_list),
+    # path('platform/cart/', show_cart),
+    path('sign_up_by_html/', sign_up_by_html),
+    path('sign_up_by_django/', sign_up_by_django),
+
+
+
 
 ]
