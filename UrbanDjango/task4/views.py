@@ -11,7 +11,7 @@ def main_page(request):
         'title': title,
         'text1': text1,
         'text2': text2,
-        'text3': text3,
+        'text3': text3
     }
     return render(request, 'fourth_task/platform.html', context)
 
