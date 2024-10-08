@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{title}}</title>
-</head>
-<body>
-    <h1> {{empty_cart}}</h1>
-    <a href="/platform"><button>{{back_home}}</button></a>
-</body>
-</html>
+{% extends 'fourth_task/menu.html' %}
+
+{% block pagename %}
+    <h1> {{title}}</h1>
+{% endblock %}
+
+{% block menu %}
+    {{block.super}}
+{% endblock %}
+
+{% block content %}
+    <h2>{{empty_cart}}</h2>
+{% endblock %}
